@@ -1,7 +1,8 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 // due-point = T - (100 - RH)/5
 
 function getDateWithTimeZoneOffset(offset) {
@@ -89,7 +90,7 @@ function App() {
                 onChange={onChange}
               />
               <button type="submit" htmlFor="city">
-                Search
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
               </button>
             </form>
           </section>
